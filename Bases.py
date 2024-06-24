@@ -113,7 +113,32 @@ print(f"{x} elevado a la {y} es igual a {x**y}")
 #raíz cuadrada
 
 print(f"La raiz cuadrada de {x} es {x**0.5}")
-"""
+
 #redondeo 
 
 print(round(90/7,1))
+
+"""
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Index en phyton
+# Acepta 3 parametros uno lo que busco, el segundo desde que posición lo quiero buscar y el ultimo hasta que posición lo quiero buscar 
+
+text = "this is a test"
+
+"""
+resultado = text[0]
+
+print(resultado)
+
+resultado = text.index("test")
+print(resultado)
+# rindex busca desde la ultima posición
+
+resultado = text.rindex("this")
+
+#Slicing extraigo todos los caracteres comprendidos entre 2 posiciones no incluye la posición final
+"""
+# Si añado un tercer parametro es cada cuanto salto es decir si coloco 2 salta de 2 en 2 y toma el caracter
+# Si coloco menos -1 en el ultimo caracter va desde atras 
+fragmento = text[2:5]
+print(fragmento)
