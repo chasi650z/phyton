@@ -1,4 +1,5 @@
-#D1
+"""
+#Day 1
 # con comillas si es texto
 print("Hello Word")
 # sin comillas cuando son números
@@ -18,4 +19,101 @@ print("\t Practice")
 print("Tu nombre es "+ input(" Enter your name: "))
 print("Tu Apellido es "+ input("Enter your lastname: "))
 
-print("Tu nombre es "+ input("Enter your name: ")+ " "+ input("Enter your lastname: "))
+print("Tu nombre es "+ input("Enter your name: ")+ " "+ input("Enter your lastname: ")) 
+
+"""
+#-------------------------------------------------------------------------------------------------------
+
+#Day 2
+#Variables
+"""
+name="Pablo"
+print(name)
+
+name="Juan"
+print(name)
+
+edad = 30
+
+print(edad)
+#lo que se ingresa por un input es un str no un int o float por eso hay errores se deben hacer convercinoes 
+
+val = input("Ingresa un número: ")
+print("tu edad es "+ val) 
+
+print(type(val))
+
+#Conversiones 
+
+# conversión: phyton lo hace de manera automática 
+# explicita: quiero convertir un tipo de valor en otro por ejemplo de string a num o viceversa
+
+#Conversión implicita
+num1 = 20 
+num2 = 30.5
+print(type(num1))
+print(type(num2))
+num1 = num1 + num2
+print(type(num1))
+
+#explicita 
+
+num3 = 5.8
+print(num3)
+print(type(num3))
+
+num3 = int(num3)
+print(num3)
+print(type(num3))
+
+#Esta conversión no hace redondeo directamente elimina los decimales 
+
+val = input("Ingresa un número: ")
+val = int(val)
+print(type(val))
+print(val+1)
+
+#Formatos 
+
+x = 10 
+y = 5
+
+print("Mis numeros son {} y {}".format(x,y))
+
+print("La suma de {} y {} es {}".format(x,y,y+x))
+
+color = "rojo"
+matricula = 256
+print(f"El auto es {color} y su matricula es {matricula}")
+
+#Operadores 
+
+x = 6
+y = 2
+z = 7
+
+print(f"{x} mas {y} es igual a {x+y}")
+print(f"{x} mas {y} es igual a {x-y}")
+print(f"{x} mas {y} es igual a {x/y}")
+print(f"{x} mas {y} es igual a {x*y}")
+
+
+#división al piso, si es decimal va a eliminar el decimal colocando solo el entero, no redondea
+
+print(f"{z} divido al piso de {y} es igual a {z//y}")
+
+#Modulo solo obtiene el residuo de la división
+
+print(f"{z} modulo de {y} es igual {z%y}")
+
+#potencia de un número 
+
+print(f"{x} elevado a la {y} es igual a {x**y}")
+
+#raíz cuadrada
+
+print(f"La raiz cuadrada de {x} es {x**0.5}")
+"""
+#redondeo 
+
+print(round(90/7,1))
