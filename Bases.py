@@ -1,4 +1,3 @@
-"""
 #Day 1
 # con comillas si es texto
 print("Hello Word")
@@ -137,8 +136,76 @@ print(resultado)
 resultado = text.rindex("this")
 
 #Slicing extraigo todos los caracteres comprendidos entre 2 posiciones no incluye la posición final
-"""
+
 # Si añado un tercer parametro es cada cuanto salto es decir si coloco 2 salta de 2 en 2 y toma el caracter
 # Si coloco menos -1 en el ultimo caracter va desde atras 
 fragmento = text[2:5]
 print(fragmento)
+
+
+ # Metodo upper para colocar todo en mayusculas 
+ # Metodo lower para minusculas
+ # split separa en partes /lista
+ # join unir items usando separadores
+ # find encontrar un sub-string
+ # replace remplaza una palabra o substring para dos argumentos el primero es el texto a remplazar, el segundo con lo que quiero remplazar
+
+texto = "Este es un texto de prueba"
+resultado = texto
+
+print(texto.upper())
+print(texto.lower())
+
+print(texto.split()) # los separa en palabras no caracteres, si coloco algo como argumento se usara como separador
+
+#Listas se puede tener una lista hecha de listas y de casi cualquier cosa
+
+mi_lista = ['a','b','c']
+resultado = len(mi_lista)
+resultado2 = mi_lista[0]
+
+
+mi_lista[0] = "alfa"
+
+mi_lista.append('g')
+mi_lista.pop() # si no coloco parametros dentor de pop elimina el ultimo elemento
+
+print(resultado)
+print(type(mi_lista))
+
+mi_lista.sort() # ordena alfabeticamente
+mi_lista.reverse() # ordena alfabeticamente pero al reves
+
+
+
+# Dicionarios no tienen un orden o indice, estos tienen claves y valores 
+
+diccionario = {'c1':'valor 1', 'c2':'valor2', 'c3':'valor 3'}
+
+resultado = diccionario['c2'] # obtengo el valor o valores asociados a la clave c2
+
+# puede haber dicionario dentro de dicionarios , Parece 
+
+
+#tuples son inmutables no se pueden cambiar
+
+t = (1,2,3)
+
+# set, solo admiten elementos únicos es importante esto
+# no se puede incluir ni listas ni diccionarios dentro de ellos 
+
+mi_set = set([1,2,3,4,5])
+
+print(type(mi_set))
+print(mi_set)
+
+
+
+#boolean 
+
+var1 = True
+var2 = False
+numero = 5 > 2+3
+
+
+
