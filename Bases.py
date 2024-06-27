@@ -1,3 +1,4 @@
+"""""
 #Day 1
 # con comillas si es texto
 print("Hello Word")
@@ -117,14 +118,13 @@ print(f"La raiz cuadrada de {x} es {x**0.5}")
 
 print(round(90/7,1))
 
-"""
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Index en phyton
 # Acepta 3 parametros uno lo que busco, el segundo desde que posición lo quiero buscar y el ultimo hasta que posición lo quiero buscar 
 
 text = "this is a test"
 
-"""
+
 resultado = text[0]
 
 print(resultado)
@@ -209,3 +209,38 @@ numero = 5 > 2+3
 
 
 
+# operadores lógicos como mayor igual etc 
+# y operadores como and u or 
+# No hubo nada nuevo la vdd 
+
+
+# Los if van SIEMPRE con dos puntos al final de la sentencia 
+# Para un else if se escribre 
+# elif
+
+X   = True
+
+if X:
+    print("es correcto")
+elif X:
+    print("es correcto")
+else:
+    print("es correcto")
+
+"""
+
+#For 
+
+lista =['a','b','c']
+
+for letra in lista:
+    numero_letra = lista.index(letra) + 1
+    print(f"letra {numero_letra}: {letra}")
+
+# los whiles son literalmente igual 
+# el range tiene 3 parametros primero desde donde, segundo hasta donde, y tercero y no obligatorio cuantos se salta en los elementos
+for numero in range(20,31):
+    print (numero)
+    
+# Creo una lista que va desde el 1 al 100, Nota no toma el ultimo valor 
+lista = list(range(1,101))
